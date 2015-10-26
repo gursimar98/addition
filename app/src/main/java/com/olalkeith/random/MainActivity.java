@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
             double num1,num2;
             num1 = Double.parseDouble(a1.getText().toString());
             num2 = Double.parseDouble(a2.getText().toString());
+
+            double ans = num1 + num2;
+
+            TextView t = (TextView)findViewById(R.id.TVresult);
+            t.setText("" + ans);
 
         }
 
